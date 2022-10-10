@@ -437,10 +437,10 @@ border: none;
 .icons-team-list-footer {
   display: flex;
   gap: 10px;
-  padding-top: 20px;
   }
 
 .footer-title {
+margin-bottom: 20px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -449,7 +449,7 @@ color: var(--primary-bgc);
 }
 
 .icons-team-link-footer {
-  background-color:  rgba(255, 255, 255, 0.1);;
+background-color:  rgba(255, 255, 255, 0.1);;
 }
 
 .icons-footer {
@@ -457,12 +457,45 @@ fill: var(--primary-bgc);
 }
 
 .box-flex {
-  display: flex;
-  align-items: baseline;
+display: flex;
+align-items: baseline;
 }
 
 .support {
-  margin-left: 70px;
+margin-left: 70px;
+}
+
+.form-footer {
+margin-left: 93px;
+}
+
+.input-footer {
+padding: 15px 0;
+padding-left: 16px;
+min-width: 358px;
+background-color: transparent;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+
+}
+
+.input-footer::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-form-footer {
+  display: block;
+margin-left: 12px;
+min-width: 200px;
+}
+
+.icon-form-footer {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/main/icon-send.svg);
+
 }
 
 .backdrop {
