@@ -617,6 +617,8 @@ p {
   border-radius: 4px;
   outline: transparent;
   cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .form-field-list .form-field + .form-field {
@@ -625,15 +627,16 @@ p {
 
 .textarea {
   width: 100%;
+  padding: 12px 16px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
   cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea::placeholder {
-  padding: 12px 16px;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -689,7 +692,6 @@ p {
 }
 
 .textarea:focus {
-  padding: 12px 16px;
   border-color: var(--accent-color);
 }
 
@@ -705,10 +707,6 @@ left: 12px;
 display: block;
 }
 
-form:focus {
-  border: none;
-}
-
 .modal-input:focus {
   padding-left: 40px;
 }
@@ -720,7 +718,6 @@ border-color: var(--accent-color);
 .modal-input:focus-within ~ .icon-form {
   fill: var(--accent-color);
 }
-
 
 /* .form-field-general:focus-within > .icon-form {
   fill: var(--accent-color);
